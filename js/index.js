@@ -6,8 +6,5 @@
 if(sessionStorage.getItem("userLogged")==undefined || sessionStorage.getItem("userLogged")=="no") window.location.href = "myLogin.html";
 
 $(document).ready(function() {
-
-    $(function(){
-        $("#mainMenu").load("default.html");
-    });
+    $("#mainMenu").load("myMenu.html");
 })

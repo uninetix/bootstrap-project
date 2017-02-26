@@ -9,6 +9,7 @@ $( document ).ready( function () {
     $("#btnLogin").click(function () {
         if ($("#myLogin").val() == v_login && $("#myPassword").val() == v_password) {
             sessionStorage.setItem("userLogged", "yes");
+            sessionStorage.setItem("userName", v_login);
             window.location.href = "index.html";
             return false;
         } else {
